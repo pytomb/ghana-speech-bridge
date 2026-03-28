@@ -1,0 +1,57 @@
+{
+  "_meta": {
+    "language": "Twi (Asante)",
+    "code": "tw",
+    "reviewed": false,
+    "reviewNote": "AI-assisted translations. MUST be reviewed by a native Twi speaker before production use. Special characters ɛ and ɔ are tonally significant — do not substitute with e/o."
+  },
+  "common": {
+    "submit": "Fa kɔ",
+    "cancel": "Gyae",
+    "back": "San kɔ",
+    "next": "Kɔ so",
+    "save": "Kora",
+    "delete": "Yi fi hɔ",
+    "edit": "Sesa",
+    "confirm": "Gye to mu",
+    "yes": "Aane",
+    "no": "Daabi",
+    "ok": "Yɛ",
+    "close": "To mu",
+    "loading": "Ɛretwɛn...",
+    "error": "Mfomsoɔ bi asi",
+    "success": "Aye!",
+    "retry": "Sɔ bio",
+    "search": "Hwehwɛ",
+    "send": "Fa kɔ",
+    "receive": "Gye",
+    "help": "Boa me",
+    "home": "Fie",
+    "settings": "Nhyehyɛeɛ",
+    "logout": "Pue",
+    "welcome": "Akwaaba",
+    "or": "anaa"
+  },
+  "auth": {
+    "name": "Din",
+    "phone": "Fon nɔma",
+    "pin": "PIN",
+    "login": "Hyɛ mu",
+    "register": "Kyerɛw din",
+    "forgotPin": "Wo werɛ fii wo PIN?",
+    "createAccount": "Yɛ akaunti"
+  },
+  "voice": {
+    "tapToSpeak": "Klik na kasa",
+    "listening": "Ɛretie...",
+    "processing": "Ɛreyɛ adwuma...",
+    "notUnderstood": "Kafra, mente asɛm no. Sɔ bio.",
+    "confirm": "Wokyerɛɛ sɛ: {text}. Eye saa ana?",
+    "tapToHear": "Klik na tie"
+  },
+  "errors": {
+    "networkError": "Intanɛt nni hɔ",
+    "serverError": "Sɛfoa bi asi. Sɔ bio.",
+    "invalidInput": "Hwɛ nea wokyerɛɛ no bio"
+  }
+}

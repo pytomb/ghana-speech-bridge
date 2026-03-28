@@ -1,0 +1,42 @@
+{
+  "_meta": {
+    "domain": "fintech",
+    "reviewed": false,
+    "reviewNote": "Financial terms for mobile money, transfers, and savings apps. Review with native speakers AND a financial inclusion specialist."
+  },
+  "terms": {
+    "mobileMoneyAccount": { "en": "Mobile money account", "tw": "Mobile sika akaunti", "ee": "Mobile sika akaunti", "gaa": "Mobile sika akaunti" },
+    "sendMoney": { "en": "Send money", "tw": "Fa sika kɔ", "ee": "Xo sika", "gaa": "Tso sika" },
+    "receiveMoney": { "en": "Receive money", "tw": "Gye sika", "ee": "Ɖu sika", "gaa": "Gye sika" },
+    "balance": { "en": "Balance", "tw": "Sika a wɔwɔ hɔ", "ee": "Sika le ŋu", "gaa": "Sika" },
+    "amount": { "en": "Amount", "tw": "Sika dodow", "ee": "Sika susu", "gaa": "Sika nu" },
+    "recipient": { "en": "Recipient", "tw": "Onipa a wofa sika no", "ee": "Ame si ɖu sika", "gaa": "Onipa si gye" },
+    "transactionFee": { "en": "Transaction fee", "tw": "Sika a wɔtua ama adwuma no", "ee": "Sika a wɔɖo", "gaa": "Sika sɛ" },
+    "confirmTransfer": { "en": "Confirm transfer", "tw": "Gye to mu sɛ wofa sika kɔ", "ee": "Lɔlɔ̃ sika xo", "gaa": "Nɔɔ sika tso" },
+    "enterPin": { "en": "Enter your PIN", "tw": "Hyɛ wo PIN", "ee": "Ŋlɔ PIN", "gaa": "Kɛ PIN" },
+    "transactionSuccessful": { "en": "Transaction successful", "tw": "Adwuma no wie aye", "ee": "Wɔwɔ nyuie", "gaa": "Adwuma no wie" },
+    "transactionFailed": { "en": "Transaction failed", "tw": "Adwuma no anto mu", "ee": "Wɔwɔ nyuie o", "gaa": "Adwuma no anto mu" },
+    "savings": { "en": "Savings", "tw": "Sika a wɔkora", "ee": "Sika si wɔkora", "gaa": "Sika ni" },
+    "loan": { "en": "Loan", "tw": "Bɔne", "ee": "Nubɔbɔ", "gaa": "Bɔne" },
+    "interestRate": { "en": "Interest rate", "tw": "Bɔne ho ka", "ee": "Nubɔbɔ susu", "gaa": "Bɔne fɛɛ" },
+    "withdrawal": { "en": "Withdrawal", "tw": "Sika twa", "ee": "Sika ɖe", "gaa": "Sika yi" },
+    "deposit": { "en": "Deposit", "tw": "Sika hyɛ", "ee": "Sika ɖo", "gaa": "Sika tso" }
+  },
+  "voicePrompts": {
+    "askAmount": {
+      "en": "How much do you want to send?",
+      "tw": "Sika dodow bɛn na wopɛ sɛ wofa kɔ?",
+      "ee": "Sika aɖe ka fɔ péa xo?"
+    },
+    "askRecipient": {
+      "en": "Who do you want to send money to?",
+      "tw": "Hwan na wopɛ sɛ wofa sika kɔ no?",
+      "ee": "Ame ɖe ka fɔ péa xo sika na?"
+    },
+    "confirmSend": {
+      "en": "Send {amount} cedis to {name}?",
+      "tw": "Fa {amount} sidi kɔ {name}?",
+      "ee": "Xo {amount} sidi na {name}?"
+    }
+  }
+}

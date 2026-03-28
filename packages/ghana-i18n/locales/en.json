@@ -1,0 +1,52 @@
+{
+  "_meta": { "language": "English", "code": "en", "reviewed": true },
+  "common": {
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "back": "Back",
+    "next": "Next",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "close": "Close",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "success": "Done!",
+    "retry": "Try again",
+    "search": "Search",
+    "send": "Send",
+    "receive": "Receive",
+    "help": "Help",
+    "home": "Home",
+    "settings": "Settings",
+    "logout": "Log out",
+    "welcome": "Welcome",
+    "or": "or"
+  },
+  "auth": {
+    "name": "Name",
+    "phone": "Phone number",
+    "pin": "PIN",
+    "login": "Log in",
+    "register": "Register",
+    "forgotPin": "Forgot PIN?",
+    "createAccount": "Create account"
+  },
+  "voice": {
+    "tapToSpeak": "Tap to speak",
+    "listening": "Listening...",
+    "processing": "Processing...",
+    "notUnderstood": "Sorry, I didn't understand. Please try again.",
+    "confirm": "You said: {text}. Is that right?",
+    "tapToHear": "Tap to hear"
+  },
+  "errors": {
+    "networkError": "No internet connection",
+    "serverError": "Server error. Please try again.",
+    "invalidInput": "Please check your input"
+  }
+}

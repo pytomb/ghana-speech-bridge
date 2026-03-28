@@ -1,0 +1,39 @@
+{
+  "_meta": {
+    "domain": "agriculture",
+    "reviewed": false,
+    "reviewNote": "Terms for smallholder farmers: crop prices, weather, extension services. Review with rural farmers and agricultural extension officers."
+  },
+  "terms": {
+    "crop": { "en": "Crop", "tw": "Nnɔbae", "ee": "Tsitre", "gaa": "Nnɔbae" },
+    "harvest": { "en": "Harvest", "tw": "Nnɔbae", "ee": "Tsitrenu", "gaa": "Harvest" },
+    "planting": { "en": "Planting season", "tw": "Dua bere", "ee": "Dzitsi ŋkeke", "gaa": "Planting bere" },
+    "rainfall": { "en": "Rainfall", "tw": "Ɔsu", "ee": "Tsidzadza", "gaa": "Ɔsu" },
+    "drought": { "en": "Drought", "tw": "Ɔwiae", "ee": "Atidzitsi", "gaa": "Drought" },
+    "fertilizer": { "en": "Fertilizer", "tw": "Asase ho ɔhaw", "ee": "Anyigba nyuitɔ", "gaa": "Fertilizer" },
+    "pesticide": { "en": "Pesticide", "tw": "Afifide ho ɔhaw", "ee": "Atike si gbugbɔe", "gaa": "Pesticide" },
+    "marketPrice": { "en": "Market price", "tw": "Dwam bo", "ee": "Hɔ susu", "gaa": "Market bo" },
+    "extensionOfficer": { "en": "Extension officer", "tw": "Okuafo mmoa ɔhwɛfoɔ", "ee": "Tefe ŋɔlinya", "gaa": "Extension officer" },
+    "soil": { "en": "Soil", "tw": "Asase", "ee": "Anyigba", "gaa": "Asase" },
+    "irrigation": { "en": "Irrigation", "tw": "Nsuo ma nnɔbae", "ee": "Tsi ŋu", "gaa": "Irrigation" },
+    "storage": { "en": "Storage / warehouse", "tw": "Nnɔbae dan", "ee": "Tsitre xɔ", "gaa": "Storage" },
+    "cooperative": { "en": "Farmer cooperative", "tw": "Okuafoɔ kuo", "ee": "Fiafia", "gaa": "Cooperative" }
+  },
+  "voicePrompts": {
+    "askCrop": {
+      "en": "What crop are you growing?",
+      "tw": "Nnɔbae bɛn na wodua?",
+      "ee": "Tsitre ɖeke ka fɔ le doa?"
+    },
+    "askHarvestDate": {
+      "en": "When do you plan to harvest?",
+      "tw": "Bere bɛn na wopɛ sɛ wogye nnɔbae no?",
+      "ee": "Ŋkeke ɖeke ka fɔ péa tsitre nu?"
+    },
+    "marketPriceUpdate": {
+      "en": "Today's price for {crop} is {price} cedis per bag.",
+      "tw": "Ɛnnɛ {crop} bo yɛ {price} sidi bag biara.",
+      "ee": "Egbe {crop} susu le {price} sidi."
+    }
+  }
+}

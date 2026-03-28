@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+.next/
+out/
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Turbo
+.turbo/
+
+# ML artifacts (large files — use Hugging Face or GDrive)
+ml/checkpoints/
+ml/models/
+ml/*.pt
+ml/*.bin
+ml/*.safetensors
+*.wav
+*.mp3
+*.ogg
+
+# Cache
+.cache/
+*.db
+*.sqlite
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,48 @@
+{
+  "_meta": {
+    "language": "Ewe",
+    "code": "ee",
+    "reviewed": false,
+    "reviewNote": "AI-assisted translations. Must be reviewed by a native Ewe speaker. Ewe is tonal — tonal marks matter."
+  },
+  "common": {
+    "submit": "Xo",
+    "cancel": "Ɖe",
+    "back": "Yi egbe",
+    "next": "Yi edzi",
+    "save": "Tsɔ kpe",
+    "delete": "Ɖe egbe",
+    "edit": "Trɔ",
+    "confirm": "Lɔlɔ̃",
+    "yes": "Ɛ̃",
+    "no": "Ao",
+    "ok": "Nyuie",
+    "close": "Xe",
+    "loading": "Le wɔwɔm...",
+    "error": "Νu ɖesiaɖe wɔe",
+    "success": "Nyuie!",
+    "retry": "Dzo megbe",
+    "search": "Dzo",
+    "send": "Xo",
+    "receive": "Ɖu",
+    "help": "Kpe ŋu",
+    "home": "Ƒe",
+    "settings": "Dzɔdzɔe",
+    "logout": "Tso",
+    "welcome": "Woezɔ",
+    "or": "abe"
+  },
+  "voice": {
+    "tapToSpeak": "Kplɔ bo gblɔ",
+    "listening": "Le tia...",
+    "processing": "Le wɔwɔm...",
+    "notUnderstood": "Kafra, mese ŋu o. Dzo megbe.",
+    "confirm": "Agblɔ: {text}. Enye esia na?",
+    "tapToHear": "Kplɔ bo se"
+  },
+  "errors": {
+    "networkError": "Internet mele ŋu o",
+    "serverError": "Server ɖe. Dzo megbe.",
+    "invalidInput": "Kpɔ nane wɔe megbe"
+  }
+}

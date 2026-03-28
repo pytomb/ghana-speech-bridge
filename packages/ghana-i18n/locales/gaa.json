@@ -1,0 +1,48 @@
+{
+  "_meta": {
+    "language": "Ga",
+    "code": "gaa",
+    "reviewed": false,
+    "reviewNote": "AI-assisted translations. Must be reviewed by a native Ga speaker (Greater Accra). Ga is a tonal language."
+  },
+  "common": {
+    "submit": "Tso",
+    "cancel": "Bɔ",
+    "back": "Gbɛi",
+    "next": "Jɛi",
+    "save": "Kɛ",
+    "delete": "Gbɔɔ",
+    "edit": "Trɔ",
+    "confirm": "Nɔɔ",
+    "yes": "Ɛɛ",
+    "no": "Daabi",
+    "ok": "Oyiwala",
+    "close": "Gbɔɔ",
+    "loading": "Ekpɛɛ...",
+    "error": "Ojɔgbainɔ",
+    "success": "Oyiwala!",
+    "retry": "Yɛ yɛɛ",
+    "search": "Tsɔ",
+    "send": "Tso",
+    "receive": "Gye",
+    "help": "Boɔ mi",
+    "home": "Shia",
+    "settings": "Nhyehyɛ",
+    "logout": "Gbɔɔ",
+    "welcome": "Ojekoo",
+    "or": "abe"
+  },
+  "voice": {
+    "tapToSpeak": "Kpɛ bo gbɛ",
+    "listening": "Etie...",
+    "processing": "Ewɔ...",
+    "notUnderstood": "Kafra, mente. Yɛ yɛɛ.",
+    "confirm": "Ogblɔ: {text}. Enye saa?",
+    "tapToHear": "Kpɛ bo tie"
+  },
+  "errors": {
+    "networkError": "Internet meli",
+    "serverError": "Sɛfoa. Yɛ yɛɛ.",
+    "invalidInput": "Kpɛ nane wɔe megbe"
+  }
+}

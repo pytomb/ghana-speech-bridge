@@ -1,0 +1,48 @@
+{
+  "_meta": {
+    "language": "Dagbani",
+    "code": "dag",
+    "reviewed": false,
+    "reviewNote": "AI-assisted translations. Must be reviewed by a native Dagbani speaker (Northern Region). Dagbani is part of the Mole-Dagbani cluster."
+  },
+  "common": {
+    "submit": "Kpɛ",
+    "cancel": "Gari",
+    "back": "Tia",
+    "next": "Nɔ",
+    "save": "Ka",
+    "delete": "Yi",
+    "edit": "Seɣi",
+    "confirm": "Nɔɔ",
+    "yes": "Ayi",
+    "no": "Ayi daabi",
+    "ok": "Naa",
+    "close": "Kpe",
+    "loading": "Ɛnda...",
+    "error": "Kpɛm",
+    "success": "Naa!",
+    "retry": "Zoli",
+    "search": "Yiɣi",
+    "send": "Kpɛ",
+    "receive": "Gye",
+    "help": "Sɔɣi",
+    "home": "Yili",
+    "settings": "Ninsaligu",
+    "logout": "Yi",
+    "welcome": "Ni ti yiɣi",
+    "or": "baa"
+  },
+  "voice": {
+    "tapToSpeak": "Diri na zaɣi",
+    "listening": "Niŋ tiŋ...",
+    "processing": "Ɛnda...",
+    "notUnderstood": "Kafra, n ni wuhigu. Zoli.",
+    "confirm": "A zaɣi: {text}. Bia saa?",
+    "tapToHear": "Diri na niŋ"
+  },
+  "errors": {
+    "networkError": "Internet niŋ kuri",
+    "serverError": "Kpɛm. Zoli.",
+    "invalidInput": "Nyɛ nane wɔe zaɣi bio"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "_meta": {
+    "domain": "healthcare",
+    "reviewed": false,
+    "reviewNote": "Health terms for community health workers, maternal health, and clinic apps. Review with native speakers AND a healthcare professional familiar with rural Ghana."
+  },
+  "terms": {
+    "healthWorker": { "en": "Health worker", "tw": "Onipa a ɔboa wɔn a wɔyare", "ee": "Ame si wɔ ame nyuitɔwo", "gaa": "Onipa ni bo" },
+    "clinic": { "en": "Clinic", "tw": "Yare so", "ee": "Blibo xɔ", "gaa": "Yare so" },
+    "hospital": { "en": "Hospital", "tw": "Yare so kɛse", "ee": "Blibo xɔ gã", "gaa": "Hospitaa" },
+    "symptoms": { "en": "Symptoms", "tw": "Yare ahoɔden", "ee": "Nyɔnuwo", "gaa": "Yare fɛɛ" },
+    "fever": { "en": "Fever", "tw": "Hye", "ee": "Tsi", "gaa": "Hye" },
+    "malaria": { "en": "Malaria", "tw": "Ntɔkwa yare", "ee": "Dzika", "gaa": "Malaria" },
+    "pregnancy": { "en": "Pregnancy", "tw": "Nyinsɛn", "ee": "Nyɔnuwo", "gaa": "Nyinsɛn" },
+    "antenatalCare": { "en": "Antenatal care", "tw": "Nyinsɛn ho hwɛ", "ee": "Nyɔnuwo nyuitɔ", "gaa": "Nyinsɛn tɔ" },
+    "vaccination": { "en": "Vaccination", "tw": "Turo", "ee": "Atike", "gaa": "Turo" },
+    "medication": { "en": "Medication", "tw": "Ɔhaw", "ee": "Atike", "gaa": "Ɔhaw" },
+    "dosage": { "en": "Dosage", "tw": "Ɔhaw dodow", "ee": "Atike susu", "gaa": "Ɔhaw fɛɛ" },
+    "emergency": { "en": "Emergency", "tw": "Amane", "ee": "Nublibliwo", "gaa": "Amane" },
+    "referral": { "en": "Referral", "tw": "Kɔ yare so foforɔ", "ee": "Yɔ xɔ fofo", "gaa": "Kɔ yare so" },
+    "nhis": { "en": "NHIS (Health Insurance)", "tw": "NHIS (Yare ho bɔhyɛ)", "ee": "NHIS", "gaa": "NHIS" }
+  },
+  "voicePrompts": {
+    "askSymptoms": {
+      "en": "What symptoms are you experiencing?",
+      "tw": "Yare bɛn na wohunu?",
+      "ee": "Nyɔnuwo aɖeke wɔm ale ka?"
+    },
+    "durationQuestion": {
+      "en": "How many days have you had this?",
+      "tw": "Nnɛ ahe na wowɔ yare yi?",
+      "ee": "Ŋkeke aɖe ka wòle ɖe esia gbɔ?"
+    },
+    "seekHelp": {
+      "en": "Please go to the clinic today.",
+      "tw": "Yɛ kɔ yare so ɛnnɛ ara.",
+      "ee": "Meɖe kuku yi blibo xɔ egbe."
+    }
+  }
+}
