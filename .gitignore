@@ -40,6 +40,10 @@ ml/*.safetensors
 *.db
 *.sqlite
 
+# Runtime state (budget + translation cache — local only)
+.budget.json
+.cache.json
+
 # IDE
 .vscode/
 .idea/
