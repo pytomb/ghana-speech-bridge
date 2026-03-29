@@ -2,12 +2,17 @@
  * Khaya AI (GhanaNLP) client
  * Docs: https://translation.ghananlp.org
  *
- * Supported language pairs (format: "src-tgt"):
- *   en-tw, tw-en, en-ee, ee-en, en-gaa, gaa-en,
- *   en-dag, dag-en, en-fat, fat-en, en-gur, gur-en
+ * Confirmed endpoints (sourced from official Python client library):
+ *   Translation: POST /v1/translate          body: { in, lang: "en-tw" }
+ *   TTS:         POST /tts/v1/tts            body: { text, language }
+ *   STT:         POST /asr/v1/transcribe     query: ?language=tw   body: raw audio/mpeg
+ *
+ * Auth: Ocp-Apim-Subscription-Key header (Azure API Management)
+ *
+ * Supported language codes: tw, ee, gaa, dag, fat, gur, yo
  */
 
-const KHAYA_BASE = "https://translation-api.ghananlp.org/v1";
+const BASE = "https://translation-api.ghananlp.org";
 
 function apiKey(): string {
   const key = process.env.KHAYA_API_KEY;
@@ -42,11 +47,12 @@ export async function khayaTranslate(
   from: KhayaLang,
   to: KhayaLang
 ): Promise<TranslateResult> {
-  const res = await fetch(`${KHAYA_BASE}/translate`, {
+  const res = await fetch(`${BASE}/v1/translate`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": `Bearer ${apiKey()}`,
+      "Cache-Control": "no-cache",
+      "Ocp-Apim-Subscription-Key": apiKey(),
     },
     body: JSON.stringify({ in: text, lang: `${from}-${to}` }),
   });
@@ -56,8 +62,9 @@ export async function khayaTranslate(
     throw new Error(`Khaya translate failed (${res.status}): ${body}`);
   }
 
-  const data = await res.json();
-  return { translatedText: data.translatedText, provider: "khaya" };
+  // Khaya returns a plain JSON string, not an object
+  const translatedText: string = await res.json();
+  return { translatedText, provider: "khaya" };
 }
 
 // ── Speech-to-Text ───────────────────────────────────────────────────────────
@@ -66,14 +73,16 @@ export async function khayaSTT(
   audioBlob: Blob,
   lang: KhayaLang
 ): Promise<STTResult> {
-  const form = new FormData();
-  form.append("audio", audioBlob, "audio.wav");
-  form.append("lang", lang);
+  const audioBuffer = await audioBlob.arrayBuffer();
 
-  const res = await fetch(`${KHAYA_BASE}/stt`, {
+  const res = await fetch(`${BASE}/asr/v1/transcribe?language=${lang}`, {
     method: "POST",
-    headers: { "Authorization": `Bearer ${apiKey()}` },
-    body: form,
+    headers: {
+      "Content-Type": "audio/mpeg",
+      "Cache-Control": "no-cache",
+      "Ocp-Apim-Subscription-Key": apiKey(),
+    },
+    body: audioBuffer,
   });
 
   if (!res.ok) {
@@ -82,7 +91,9 @@ export async function khayaSTT(
   }
 
   const data = await res.json();
-  return { transcript: data.transcription, provider: "khaya" };
+  // Normalise across possible response field names
+  const transcript: string = data.transcript ?? data.transcription ?? data.text ?? "";
+  return { transcript, provider: "khaya" };
 }
 
 // ── Text-to-Speech ───────────────────────────────────────────────────────────
@@ -91,13 +102,15 @@ export async function khayaTTS(
   text: string,
   lang: KhayaLang
 ): Promise<TTSResult> {
-  const res = await fetch(`${KHAYA_BASE}/tts`, {
+  const res = await fetch(`${BASE}/tts/v1/tts`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": `Bearer ${apiKey()}`,
+      "Cache-Control": "no-cache",
+      "Ocp-Apim-Subscription-Key": apiKey(),
     },
-    body: JSON.stringify({ text, lang }),
+    // TTS uses "language" field (not "lang")
+    body: JSON.stringify({ text, language: lang }),
   });
 
   if (!res.ok) {
