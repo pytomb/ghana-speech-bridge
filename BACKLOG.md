@@ -29,6 +29,12 @@
 | 15 | CONTRIBUTING.md — three paths: native speaker review, domain vocab, code | `[Factory]` | 2026-03-28 |
 | 16 | Deploy to Vercel button in README — one-click deploy with KHAYA_API_KEY prompt | `[Infra]` | 2026-03-28 |
 | 17 | npm package setup for `@ghana-speech-bridge/i18n` — exports, tsconfig, publishConfig | `[Infra]` | 2026-03-28 |
+| 18 | Full local verification — all 4 endpoints tested against live Khaya API | `[Infra]` | 2026-03-29 |
+| 19 | Fix: auth header `Bearer` → `Ocp-Apim-Subscription-Key` (Azure API Management) | `[API]` | 2026-03-29 |
+| 20 | Fix: TTS endpoint `/v1/tts` → `/tts/v1/tts`, body field `lang` → `language` | `[API]` | 2026-03-29 |
+| 21 | Fix: STT endpoint → `/asr/v1/transcribe?language=`, raw `audio/mpeg` body | `[API]` | 2026-03-29 |
+| 22 | Fix: translate response is plain string, not `{ translatedText }` object | `[API]` | 2026-03-29 |
+| 23 | Fix: `@/` path alias in tsconfig, port 3001→3002, outputFileTracingRoot | `[Infra]` | 2026-03-29 |
 
 ---
 
