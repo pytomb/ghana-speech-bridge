@@ -26,6 +26,9 @@
 | 12 | Factory SKILL.md — auto-injects into factory when Ghana signals detected | `[Factory]` | 2026-03-28 |
 | 13 | Model roadmap + graduation checklist | `[Factory]` | 2026-03-28 |
 | 14 | GitHub repo published — pytomb/ghana-speech-bridge | `[Infra]` | 2026-03-28 |
+| 15 | CONTRIBUTING.md — three paths: native speaker review, domain vocab, code | `[Factory]` | 2026-03-28 |
+| 16 | Deploy to Vercel button in README — one-click deploy with KHAYA_API_KEY prompt | `[Infra]` | 2026-03-28 |
+| 17 | npm package setup for `@ghana-speech-bridge/i18n` — exports, tsconfig, publishConfig | `[Infra]` | 2026-03-28 |
 
 ---
 
@@ -41,11 +44,13 @@
 
 | # | Item | Workstream | Effort | Notes |
 |---|------|------------|--------|-------|
-| 1 | Deploy `apps/speech-bridge` to Vercel — set `KHAYA_API_KEY` env var | `[Infra]` | 30 min | Use Jules or `vercel deploy` |
-| 2 | Run `01_evaluate_gemma.ipynb` on existing Gemma 2B checkpoint | `[ML]` | 2–4 hrs | T4 Colab free tier. Set `MODEL_PATH` + `KHAYA_API_KEY` |
-| 3 | Whisper-Small Twi full training run (`QUICK_RUN=False`) | `[ML]` | 4–8 hrs | TPU v3 Colab. Set `HF_TOKEN` + `HF_REPO` |
-| 4 | Native speaker review of Twi locale (`packages/ghana-i18n/locales/tw.json`) | `[i18n]` | 1–2 days | Connect with GhanaNLP community or local partner |
-| 5 | Add `tsconfig.json` to `apps/speech-bridge` | `[Infra]` | 15 min | Needed for full TypeScript compilation |
+| 1 | Publish `@ghana-speech-bridge/i18n` to npm (`npm publish`) | `[Infra]` | 15 min | Run `npm run build` in packages/ghana-i18n first |
+| 2 | Deploy `apps/speech-bridge` to Vercel — set `KHAYA_API_KEY` env var | `[Infra]` | 30 min | Use the Deploy button in README or `vercel deploy` |
+| 3 | Run `01_evaluate_gemma.ipynb` on existing Gemma 2B checkpoint | `[ML]` | 2–4 hrs | T4 Colab free tier. Set `MODEL_PATH` + `KHAYA_API_KEY` |
+| 4 | Whisper-Small Twi full training run (`QUICK_RUN=False`) | `[ML]` | 4–8 hrs | TPU v3 Colab. Set `HF_TOKEN` + `HF_REPO` |
+| 5 | Native speaker review of Twi locale (`packages/ghana-i18n/locales/tw.json`) | `[i18n]` | 1–2 days | Connect with GhanaNLP community or local partner |
+| 6 | Add `tsconfig.json` to `apps/speech-bridge` | `[Infra]` | 15 min | Needed for full TypeScript compilation |
+| 7 | Open GitHub Issues for good first issues listed in CONTRIBUTING.md | `[Infra]` | 30 min | Makes the project discoverable for external contributors |
 
 ---
 

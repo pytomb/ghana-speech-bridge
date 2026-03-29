@@ -3,13 +3,17 @@
 > Voice-native language infrastructure for Ghanaian applications.
 > Supports Twi, Ewe, Ga, Dagbani, Fante — with code-switching and offline-first design.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fpytomb%2Fghana-speech-bridge&project-name=ghana-speech-bridge&root-directory=apps%2Fspeech-bridge&env=KHAYA_API_KEY&envDescription=Free%20Khaya%20API%20key%20from%20GhanaNLP%20%E2%80%94%20100%20calls%2Fmonth%20on%20developer%20tier&envLink=https%3A%2F%2Ftranslation.ghananlp.org)
+&nbsp;
+[![npm](https://img.shields.io/npm/v/@ghana-speech-bridge/i18n?label=%40ghana-speech-bridge%2Fi18n)](https://www.npmjs.com/package/@ghana-speech-bridge/i18n)
+
 ---
 
 ## What This Is
 
-A standalone service + ML workspace that gives any app in the MVP Factory
-voice and language capabilities for Ghanaian users — especially those without
-formal education who need to speak and hear in their native tongue.
+A standalone service + ML workspace that gives any app voice and language capabilities
+for Ghanaian users — especially those without formal education who need to speak and
+hear in their native tongue.
 
 **Two parallel tracks:**
 
@@ -95,29 +99,54 @@ ghana-speech-bridge/
 
 ## Quick Start
 
-### 1. Clone and install
+### Option A — Deploy in one click
+
+Click the **Deploy with Vercel** button above. Add your `KHAYA_API_KEY` when prompted.
+Your speech bridge will be live at `https://your-project.vercel.app` in under 2 minutes.
+
+Get a free Khaya API key at [translation.ghananlp.org](https://translation.ghananlp.org) — developer tier is 100 calls/month.
+
+---
+
+### Option B — Use the i18n package only
+
+If you just need locale files and domain vocabulary for an existing app:
 
 ```bash
-git clone https://github.com/YOUR_ORG/ghana-speech-bridge.git
+npm install @ghana-speech-bridge/i18n
+```
+
+```typescript
+import { getLocale, getDomainPack, SUPPORTED_LANGUAGES } from '@ghana-speech-bridge/i18n';
+
+// Get UI strings for Twi
+const tw = getLocale('tw');
+console.log(tw.common.greeting);  // "Maakye"
+
+// Get fintech domain vocabulary
+const fintech = getDomainPack('fintech');
+console.log(fintech.terms.send_money.tw);  // "Fa sika kɔ..."
+
+// Check which languages have been native-speaker reviewed
+SUPPORTED_LANGUAGES.forEach(lang => {
+  const locale = getLocale(lang.code);
+  console.log(`${lang.name}: reviewed=${locale._meta.reviewed}`);
+});
+```
+
+---
+
+### Option C — Run locally
+
+```bash
+git clone https://github.com/pytomb/ghana-speech-bridge.git
 cd ghana-speech-bridge
 npm install
-```
-
-### 2. Set environment variables
-
-```bash
 cp apps/speech-bridge/.env.example apps/speech-bridge/.env.local
-# Add your KHAYA_API_KEY
-```
-
-### 3. Run locally
-
-```bash
+# Add your KHAYA_API_KEY to .env.local
 npm run dev
 # Speech Bridge API: http://localhost:3001
 ```
-
-### 4. Test the API
 
 ```bash
 # Translate English → Twi
@@ -125,7 +154,7 @@ curl -X POST http://localhost:3001/api/translate \
   -H "Content-Type: application/json" \
   -d '{"text": "Hello, how are you?", "from": "en", "to": "tw"}'
 
-# Check API budget
+# Check API budget usage
 curl http://localhost:3001/api/budget
 ```
 
@@ -239,10 +268,16 @@ The factory build step auto-scaffolds the bridge client + voice components.
 
 ## Contributing
 
-- Native speaker translations welcome — see `packages/ghana-i18n/locales/`
-- Domain terminology packs — see `packages/ghana-i18n/domains/`
-- Please tag all AI-generated translations with `"reviewed": false`
-- Native speaker review required before `"reviewed": true`
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
+
+**Three ways to help — no coding required for two of them:**
+
+1. **Native speaker review** — correct AI-generated translations in `packages/ghana-i18n/locales/`
+2. **Domain vocabulary** — add terminology packs for education, transport, government services
+3. **Code** — API endpoints, React components, ML notebooks
+
+All locale files are marked `"reviewed": false` until a native speaker validates them.
+That review is the highest-impact contribution you can make.
 
 ---
 
